@@ -11,9 +11,14 @@
 </head>
 <body>
     <form action ="index.php">
-        <label> Opposite: </label>
-        <label> Adjacent: </label>
-        <label> Hypotenuse: </label>
+        <label> Opposite: </label> 
+        <input type="text">
+        <label> Adjacent: </label> 
+        <input type="text">
+        <label> Hypotenuse: </label> 
+        <input type="text">
+<br>
+<input type="Submit">
     </form>
 </body>
 </html>
