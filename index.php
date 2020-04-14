@@ -1,5 +1,13 @@
 <?php 
-//test
+
+if (isset($_POST['missing'])){
+$opposite = $_POST['opposite'];
+$adjacent = $_POST['adjacent'];
+
+$calculate = sqrt(($opposite**2 +$adjacent**2 ) );
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -10,15 +18,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action ="index.php">
+    <form action ="index.php" method="POST">
         <label> Opposite: </label> 
-        <input type="text">
+       <input type="number" name="opposite" > 
         <label> Adjacent: </label> 
-        <input type="text">
-        <label> Hypotenuse: </label> 
-        <input type="text">
+        <input type="number" name="adjacent">
+       
 <br>
-<input type="Submit">
+<input type="Submit" name='missing'>
     </form>
+    <?php echo $calculate; ?>
+
 </body>
 </html>
