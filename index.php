@@ -4,7 +4,8 @@ if (isset($_POST['missing'])){
 $opposite = $_POST['opposite'];
 $adjacent = $_POST['adjacent'];
 
-$calculate = sqrt(($opposite**2 +$adjacent**2 ) );
+// Also calculate other sides
+$calculatehyp = sqrt(($opposite**2 +$adjacent**2 ) );
 
 }
 
@@ -23,11 +24,11 @@ $calculate = sqrt(($opposite**2 +$adjacent**2 ) );
        <input type="number" name="opposite" > 
         <label> Adjacent: </label> 
         <input type="number" name="adjacent">
-       
+       <!-- Put hypotenuse stuff tmrw -->
 <br>
 <input type="Submit" name='missing'>
     </form>
-    <?php echo $calculate; ?>
+    <?php echo $calculatehyp; ?>
 
 </body>
 </html>
