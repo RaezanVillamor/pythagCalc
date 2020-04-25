@@ -4,8 +4,15 @@ if (isset($_POST['missing'])){
 $opposite = $_POST['opposite'];
 $adjacent = $_POST['adjacent'];
 
-// Also calculate other sides
+// Calculations
 $calculatehyp = sqrt(($opposite**2 +$adjacent**2 ) );
+$calculateadj
+
+
+//What our outputs will look like
+$hypcalculation = "Hypotenuse: " . $calculatehyp;
+
+
 
 }
 
@@ -25,10 +32,14 @@ $calculatehyp = sqrt(($opposite**2 +$adjacent**2 ) );
         <label> Adjacent: </label> 
         <input type="number" name="adjacent">
        <!-- Put hypotenuse stuff tmrw -->
+       <label> Hypotenuse: </label>
+       <input type="number" name="hypotenuse">
 <br>
 <input type="Submit" name='missing'>
     </form>
-    <?php echo $calculatehyp; ?>
+    <?php echo $hypcalculation; ?>
 
+
+    <!-- <form action="ondex.php"> -->
 </body>
 </html>
